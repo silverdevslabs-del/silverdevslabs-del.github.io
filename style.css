@@ -170,7 +170,7 @@ body::before {
 
 /* Hero Section */
 .hero {
-    padding: 180px 0 100px;
+    padding: 140px 0 100px;
     text-align: center;
     position: relative;
 }
@@ -178,6 +178,22 @@ body::before {
 .hero-container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.hero-logo-container {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-logo-video {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1.5px solid rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.25);
+    background-color: #000;
 }
 
 .hero-title {
