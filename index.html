@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silver Devs Labs - Aplicaciones y Videojuegos Móviles</title>
-    <meta name="description" content="Portal oficial de Silver Devs Labs. Creadores de herramientas innovadoras y videojuegos móviles de alta calidad.">
+    <title>Silver Devs Labs | Apps de Alto Rendimiento & Videojuegos</title>
+    <meta name="description" content="Estudio de desarrollo de software independiente especializado en herramientas de productividad Zero-Knowledge, aplicaciones de alto rendimiento y videojuegos estratégicos.">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Silver Devs Labs - Aplicaciones y Videojuegos">
-    <meta property="og:description" content="Explora nuestro catálogo de aplicaciones móviles y videojuegos estratégicos e innovadores.">
+    <meta property="og:description" content="Software innovador, privado y veloz. Cero servidores innecesarios, máxima soberanía del usuario.">
+    <meta property="og:image" content="assets/logo-silverargospass.png">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Background Glow -->
+    <div class="bg-glow"></div>
+
+    <!-- Header / Navbar -->
     <header class="navbar">
         <div class="container navbar-container">
             <a href="#" class="brand">
+                <div class="brand-badge">S</div>
                 <span class="brand-name">Silver Devs <span class="accent-cyan">Labs</span></span>
             </a>
             <nav class="nav-menu">
                 <a href="#apps" class="nav-link">Nuestras Apps</a>
+                <a href="#pilares" class="nav-link">Filosofía</a>
                 <a href="#about" class="nav-link">Nosotros</a>
                 <a href="mailto:silver.devs.labs@gmail.com" class="btn btn-primary btn-nav">Contacto</a>
             </nav>
@@ -37,18 +43,45 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-container">
-            <div class="hero-logo-container">
-                <video src="assets/logo.mp4" autoplay loop muted playsinline class="hero-logo-video"></video>
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Estudio de Desarrollo Independiente • 2026
             </div>
+
+            <div class="hero-logo-container">
+                <div class="video-glow-wrapper">
+                    <video src="assets/logo.mp4" autoplay loop muted playsinline class="hero-logo-video"></video>
+                </div>
+            </div>
+
             <h1 class="hero-title">
                 Creamos experiencias <br>
-                <span class="gradient-text">móviles excepcionales</span>
+                <span class="gradient-text">privadas y de alto rendimiento</span>
             </h1>
             <p class="hero-subtitle">
-                Diseñamos y desarrollamos herramientas de productividad potentes y videojuegos estratégicos 100% enfocados en la privacidad, el rendimiento y la mejor experiencia de usuario.
+                Diseñamos software de productividad <strong>Zero-Knowledge</strong>, utilidades de streaming y videojuegos estratégicos con un compromiso absoluto: <em>cero servidores centrales intrusivos, máxima soberanía y rendimiento nativo.</em>
             </p>
             <div class="hero-actions">
-                <a href="#apps" class="btn btn-primary">Explorar Catálogo</a>
+                <a href="#apps" class="btn btn-primary btn-lg">Explorar Catálogo</a>
+                <a href="#pilares" class="btn btn-secondary btn-lg">Nuestra Filosofía</a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Zero-Knowledge & Local</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-value">AES-256</div>
+                    <div class="stat-label">Criptografía Militar</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-value">Nativo</div>
+                    <div class="stat-label">Android • Windows • Rust</div>
+                </div>
             </div>
         </div>
     </section>
@@ -57,84 +90,185 @@
     <section class="apps" id="apps">
         <div class="container">
             <div class="section-header">
-                <span class="tagline">Nuestro Portafolio</span>
+                <span class="tagline">Catálogo Oficial</span>
                 <h2 class="section-title">Aplicaciones y Videojuegos</h2>
+                <p class="section-desc">Herramientas creadas para solucionar necesidades reales con el más alto estándar de seguridad y diseño.</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+                <button class="filter-btn" data-filter="seguridad">Seguridad & Productividad</button>
+                <button class="filter-btn" data-filter="streaming">Streaming & TTS</button>
+                <button class="filter-btn" data-filter="juegos">Videojuegos</button>
             </div>
             
             <div class="apps-grid">
-                <!-- App 1: TikTok Live TTS -->
-                <div class="card app-card status-published" id="app-tiktoktts">
-                    <span class="status-badge">Publicado</span>
+                <!-- App 1: SilverArgosPass (NUEVO & DESTACADO) -->
+                <div class="card app-card status-featured" data-category="seguridad" id="app-silverargospass">
+                    <div class="card-glow"></div>
+                    <div class="card-header-top">
+                        <span class="status-badge badge-featured">✨ Nuevo Lanzamiento</span>
+                        <span class="platform-tag">Android • Windows • Web</span>
+                    </div>
                     <div class="app-header">
-                        <img src="assets/logo-tiktoktts.png" alt="TikTok Live TTS Icon" class="app-icon">
+                        <img src="assets/logo-silverargospass.png" alt="SilverArgosPass Icon" class="app-icon shadow-cyan">
                         <div class="app-meta">
-                            <h3 class="app-title">TikTok Live TTS</h3>
-                            <span class="app-category">Herramientas / Productividad</span>
+                            <h3 class="app-title">SilverArgosPass</h3>
+                            <span class="app-category text-cyan">Inhackeable por diseño</span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        Escucha los comentarios, regalos, likes y nuevos seguidores de tu directo de TikTok en tiempo real usando síntesis de voz, sin distraerte de tu juego o transmisión.
+                        Gestor de contraseñas Zero-Knowledge con cifrado AES-256-GCM y derivación PBKDF2. No almacena datos en servidores centrales: se sincroniza en tu Google Drive y se desbloquea en Windows mediante código QR desde tu móvil.
                     </p>
+                    <div class="app-features-chips">
+                        <span class="chip">Zero-Knowledge</span>
+                        <span class="chip">RAM-Only Windows</span>
+                        <span class="chip">QR Pairing</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://silverdevslabs-del.github.io/SilverArgosPass/" class="btn btn-primary" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            Ver Web Oficial
+                        </a>
+                        <a href="https://github.com/SilverDevsLabs/SilverArgosPass/releases/latest/download/SilverArgosPass_1.0.0_x64-setup.exe" class="btn btn-outline" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Windows .exe
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 2: TikTok Live TTS -->
+                <div class="card app-card status-published" data-category="streaming" id="app-tiktoktts">
+                    <div class="card-header-top">
+                        <span class="status-badge badge-published">🚀 Publicado</span>
+                        <span class="platform-tag">Android</span>
+                    </div>
+                    <div class="app-header">
+                        <img src="assets/logo-tiktoktts.png" alt="TikTok Live TTS Icon" class="app-icon shadow-pink">
+                        <div class="app-meta">
+                            <h3 class="app-title">TikTok Live TTS</h3>
+                            <span class="app-category text-pink">Streaming & Productividad</span>
+                        </div>
+                    </div>
+                    <p class="app-desc">
+                        Escucha comentarios, regalos, likes y nuevos seguidores de tus transmisiones en vivo de TikTok en tiempo real mediante síntesis de voz ultra rápida, sin desviar la vista de tu partida.
+                    </p>
+                    <div class="app-features-chips">
+                        <span class="chip">TTS en Tiempo Real</span>
+                        <span class="chip">Filtros Inteligentes</span>
+                        <span class="chip">Voces Neuronales</span>
+                    </div>
                     <div class="app-links">
                         <a href="https://silverdevslabs-del.github.io/tiktok-live-tts-web/" class="btn btn-outline" target="_blank">Ver Web</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.silver_devs_labs.tiktoktts" class="btn btn-primary" target="_blank">Instalar</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.silver_devs_labs.tiktoktts" class="btn btn-primary" target="_blank">Google Play</a>
                     </div>
                 </div>
                 
-                <!-- App 2: Chamber of Chess -->
-                <div class="card app-card status-dev" id="app-chess">
-                    <span class="status-badge">En Desarrollo</span>
+                <!-- App 3: Chamber of Chess -->
+                <div class="card app-card status-dev" data-category="juegos" id="app-chess">
+                    <div class="card-header-top">
+                        <span class="status-badge badge-dev">🛠️ En Desarrollo</span>
+                        <span class="platform-tag">Multiplataforma</span>
+                    </div>
                     <div class="app-header">
                         <div class="app-icon-placeholder purple">♟️</div>
                         <div class="app-meta">
                             <h3 class="app-title">Chamber of Chess</h3>
-                            <span class="app-category">Juegos de Estrategia</span>
+                            <span class="app-category text-purple">Juegos de Estrategia</span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        Enfréntate a desafíos tácticos y estratégicos en una experiencia competitiva de ajedrez diseñada para potenciar tu nivel de juego con mecánicas dinámicas.
+                        Enfréntate a desafíos tácticos y estratégicos en una experiencia competitiva de ajedrez diseñada para potenciar tu nivel de juego con mecánicas dinámicas y análisis posicional.
                     </p>
+                    <div class="app-features-chips">
+                        <span class="chip">Modo Táctico</span>
+                        <span class="chip">IA Adaptativa</span>
+                    </div>
                     <div class="app-links">
                         <span class="badge badge-subtle">Próximamente</span>
                     </div>
                 </div>
                 
-                <!-- App 3: Tech Startup Tycoon -->
-                <div class="card app-card status-dev" id="app-tycoon">
-                    <span class="status-badge">En Desarrollo</span>
+                <!-- App 4: Tech Startup Tycoon -->
+                <div class="card app-card status-dev" data-category="juegos" id="app-tycoon">
+                    <div class="card-header-top">
+                        <span class="status-badge badge-dev">🛠️ En Desarrollo</span>
+                        <span class="platform-tag">Android / iOS</span>
+                    </div>
                     <div class="app-header">
                         <div class="app-icon-placeholder orange">🏢</div>
                         <div class="app-meta">
                             <h3 class="app-title">Tech Startup Tycoon</h3>
-                            <span class="app-category">Juegos de Simulación</span>
+                            <span class="app-category text-orange">Juegos de Simulación</span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        Funda tu propio estudio tecnológico, contrata desarrolladores, gestiona recursos y escala tu startup hasta convertirla en un imperio global de software.
+                        Funda tu propio estudio tecnológico, contrata desarrolladores, gestiona servidores, investiga nuevas tecnologías y escala tu startup hasta convertirla en un gigante del software.
                     </p>
+                    <div class="app-features-chips">
+                        <span class="chip">Simulación Económica</span>
+                        <span class="chip">Gestión de Talento</span>
+                    </div>
                     <div class="app-links">
                         <span class="badge badge-subtle">Próximamente</span>
                     </div>
                 </div>
                 
-                <!-- App 4: Calculadora de Infusión -->
-                <div class="card app-card status-dev" id="app-clinical">
-                    <span class="status-badge">En Desarrollo</span>
+                <!-- App 5: Calculadora Clínica -->
+                <div class="card app-card status-dev" data-category="seguridad" id="app-clinical">
+                    <div class="card-header-top">
+                        <span class="status-badge badge-dev">🛠️ En Desarrollo</span>
+                        <span class="platform-tag">Android • 100% Offline</span>
+                    </div>
                     <div class="app-header">
                         <div class="app-icon-placeholder green">🏥</div>
                         <div class="app-meta">
                             <h3 class="app-title">Calculadora Clínica</h3>
-                            <span class="app-category">Medicina / Utilidades</span>
+                            <span class="app-category text-green">Medicina & Utilidades</span>
                         </div>
                     </div>
                     <p class="app-desc">
-                        Calculadora médica de goteo e infusión para profesionales de la salud. Cálculos precisos y dosificaciones directas en segundos, 100% offline.
+                        Calculadora médica de goteo e infusión para profesionales de la salud. Cálculos precisos y dosificaciones directas en segundos, 100% offline y sin necesidad de conexión.
                     </p>
+                    <div class="app-features-chips">
+                        <span class="chip">Goteo e Infusión</span>
+                        <span class="chip">Uso Offline</span>
+                    </div>
                     <div class="app-links">
                         <span class="badge badge-subtle">Próximamente</span>
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares de Ingeniería Section -->
+    <section class="pillars" id="pilares">
+        <div class="container">
+            <div class="section-header">
+                <span class="tagline">Ingeniería & Valores</span>
+                <h2 class="section-title">¿Por qué Silver Devs Labs?</h2>
+                <p class="section-desc">Diseñamos cada línea de código bajo tres principios no negociables.</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">🔒</div>
+                    <h3>Soberanía Zero-Knowledge</h3>
+                    <p>No creamos bases de datos centralizadas de usuarios que puedan ser filtradas o hackeadas. Si nosotros no podemos ver tus datos, nadie más podrá hacerlo.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">⚡</div>
+                    <h3>Rendimiento Nativo On-Device</h3>
+                    <p>Utilizamos Kotlin moderno, Compose y Rust para garantizar que nuestras aplicaciones consuman mínimos recursos y funcionen al instante.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">💎</div>
+                    <h3>Experiencia sin Fricción</h3>
+                    <p>Interfaces intuitivas, micro-animaciones cuidadas y diseño pensado para personas reales que valoran su tiempo y privacidad.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -144,11 +278,14 @@
         <div class="container about-container">
             <div class="about-content">
                 <span class="tagline">Sobre el Estudio</span>
-                <h2 class="section-title">Enfoque en Privacidad y Rendimiento</h2>
+                <h2 class="section-title">Innovación Independiente desde el Origen</h2>
                 <p class="about-text">
-                    En <strong>Silver Devs Labs</strong> creemos que las aplicaciones móviles deben ser rápidas, respetuosas con los datos personales del usuario y visualmente atractivas. 
-                    Diseñamos nuestras herramientas bajo la filosofía <em>on-device</em>, procesando la información de manera local sin servidores innecesarios que rastreen tu comportamiento.
+                    En <strong>Silver Devs Labs</strong> creemos que las herramientas digitales deben empoderar al usuario en lugar de monetizar su privacidad. Desarrollamos soluciones independientes, robustas y preparadas para el futuro.
                 </p>
+                <div class="about-contact-box">
+                    <span>¿Tienes sugerencias o te interesa colaborar?</span>
+                    <a href="mailto:silver.devs.labs@gmail.com" class="btn btn-primary">silver.devs.labs@gmail.com</a>
+                </div>
             </div>
         </div>
     </section>
@@ -156,11 +293,47 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-links">
-                <a href="mailto:silver.devs.labs@gmail.com" class="footer-link">Soporte y Contacto</a>
+            <div class="footer-top">
+                <div class="brand">
+                    <span class="brand-name">Silver Devs <span class="accent-cyan">Labs</span></span>
+                </div>
+                <div class="footer-links">
+                    <a href="#apps" class="footer-link">Catálogo</a>
+                    <a href="#pilares" class="footer-link">Filosofía</a>
+                    <a href="mailto:silver.devs.labs@gmail.com" class="footer-link">Soporte</a>
+                </div>
             </div>
-            <p class="copyright">&copy; 2026 Silver Devs Labs. Todos los derechos reservados.</p>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Silver Devs Labs. Todos los derechos reservados.</p>
+                <span class="footer-tagline">Privacidad • Rendimiento • Innovación</span>
+            </div>
         </div>
     </footer>
+
+    <!-- Interactive Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.app-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'flex';
+                            setTimeout(() => card.style.opacity = '1', 50);
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => card.style.display = 'none', 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
