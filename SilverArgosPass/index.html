@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SilverArgosPass | Inhackeable por diseño - Gestor de Contraseñas Serverless</title>
+  <meta name="description" content="El gestor de contraseñas Zero-Knowledge que vive en tu Google Drive. Sin servidores centrales. Cifrado AES-256-GCM local y sincronización segura con Windows.">
+  <meta name="theme-color" content="#080B10">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SilverArgosPass | Inhackeable por diseño">
+  <meta property="og:description" content="No podemos perder tus contraseñas porque nunca las tenemos. Cero servidores centrales. 100% en tu control.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/SilverDevsLabs/SilverArgosPass/main/silver_argos_pass_premium_icon_1784516746731.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="app-icon.png">
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="app-icon.png" alt="SilverArgosPass Icon" class="logo-img">
+          <span>SilverArgosPass</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#comparativa">Comparativa</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="SilverArgosPass_1.0.0_x64-setup.exe" download class="btn btn-primary btn-download-exe">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Descargar .exe</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        Arquitectura Cero Servidores Centrales
+      </div>
+      <h1 class="hero-title">Inhackeable por diseño.</h1>
+      <p class="hero-subtitle">
+        No podemos perder tus contraseñas porque nunca las tenemos. Tus datos viven cifrados exclusivamente en tu propio Google Drive y la llave nunca sale de tus dispositivos.
+      </p>
+      
+      <div class="hero-cta-group">
+        <a href="SilverArgosPass_1.0.0_x64-setup.exe" download class="btn btn-primary btn-lg btn-download-exe">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Descargar para Windows (.exe)
+        </a>
+        <a href="#descarga-app" class="btn btn-secondary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+          App de Android en Google Play
+        </a>
+      </div>
+
+      <div class="hero-info-text">
+        <span>✓ Windows 10/11 64-bit</span>
+        <span>✓ Instalador seguro NSIS</span>
+        <span>✓ 100% Zero-Knowledge</span>
+      </div>
+
+      <!-- Hero Showcase Box -->
+      <div class="hero-showcase">
+        <div class="showcase-inner">
+          <div class="showcase-info">
+            <div class="showcase-feature-item">
+              <div class="showcase-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h4>Cifrado AES-256-GCM Nativo</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Tus contraseñas se cifran y descifran localmente en la memoria RAM con llaves derivadas por PBKDF2.</p>
+              </div>
+            </div>
+            <div class="showcase-feature-item">
+              <div class="showcase-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </div>
+              <div>
+                <h4>Puente Móvil por Código QR</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Tu celular es tu llave física. Escaneas el QR en Windows para desbloquear el vault sin escribir contraseñas en disco.</p>
+              </div>
+            </div>
+            <div class="showcase-feature-item" style="margin-bottom: 0;">
+              <div class="showcase-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h4>Extensión para Chrome & Firefox</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Detección y autorrellenado automático en cualquier sitio web sin comprometer la llave maestra.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-visual">
+            <div class="vault-mock">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-weight: 700; font-size: 0.9rem;">Bóveda Activa</span>
+                <span class="vault-tag">● Conectado (RAM)</span>
+              </div>
+              <div class="vault-item">
+                <div class="vault-item-left">
+                  <div class="vault-app-icon" style="color: #60A5FA;">G</div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Google Account</div>
+                    <div style="color: var(--text-dim); font-size: 0.8rem;">usuario@gmail.com</div>
+                  </div>
+                </div>
+                <div style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan);">••••••••••••</div>
+              </div>
+              <div class="vault-item">
+                <div class="vault-item-left">
+                  <div class="vault-app-icon" style="color: #F87171;">N</div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Netflix</div>
+                    <div style="color: var(--text-dim); font-size: 0.8rem;">familia@home.com</div>
+                  </div>
+                </div>
+                <div style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan);">••••••••••••</div>
+              </div>
+              <div class="vault-item">
+                <div class="vault-item-left">
+                  <div class="vault-app-icon" style="color: #34D399;">S</div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Spotify</div>
+                    <div style="color: var(--text-dim); font-size: 0.8rem;">luis@music.org</div>
+                  </div>
+                </div>
+                <div style="font-family: monospace; font-size: 0.85rem; color: var(--accent-cyan);">••••••••••••</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Pillars Section -->
+  <section id="seguridad" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pilares de Criptografía</span>
+        <h2 class="section-title">Por qué la nube tradicional ya es obsoleta.</h2>
+        <p class="section-desc">Los gestores tradicionales guardan las bóvedas de millones de personas en una sola base de datos central. Cuando son hackeados, todo el mundo pierde. Nosotros eliminamos el servidor central por completo.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="card-title">Soberanía de Datos</h3>
+          <p class="card-desc">Tu base de datos vive cifrada en tu cuenta privada de Google Drive. Nadie en Silver Devs Labs puede ver, vender o filtrar tu información.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="card-title">Zero-Knowledge Estricto</h3>
+          <p class="card-desc">Cifrado de grado militar AES-256-GCM con autenticación criptográfica. Si alguien intercepta los archivos, solo verá ruido aleatorio indescifrable.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="card-title">Cliente Windows en Rust</h3>
+          <p class="card-desc">Construido con Tauri 2.0. Consume menos de 30 MB de RAM, se inicia al instante y borra la llave de memoria al cerrar.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="card-title">Protección Biométrica</h3>
+          <p class="card-desc">Desbloquea en Android con huella dactilar nativa respaldada por el hardware de seguridad Keystore.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table Section -->
+  <section id="comparativa" class="section" style="background: rgba(14, 19, 29, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Comparativa Real</span>
+        <h2 class="section-title">SilverArgosPass vs Gestores Tradicionales</h2>
+        <p class="section-desc">Descubre por qué la arquitectura sin servidores centrales te ofrece mayor protección a una fracción del costo.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th class="highlight">SilverArgosPass</th>
+                <th>LastPass</th>
+                <th>1Password / Dashlane</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>¿Tienen servidores centrales hackeables?</strong></td>
+                <td class="highlight"><span class="check-yes">✓ NO (Tus datos en tu Drive)</span></td>
+                <td><span class="check-no">✗ SÍ (Servidores AWS centrales)</span></td>
+                <td><span class="check-no">✗ SÍ (Nube centralizada)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Suscripción Mensual</strong></td>
+                <td class="highlight"><strong>$1.99 USD / mes</strong></td>
+                <td>$3.00 USD / mes (Facturado anual)</td>
+                <td>$2.99 - $3.99 USD / mes</td>
+              </tr>
+              <tr>
+                <td><strong>Opción de Uso Gratis con Recompensas</strong></td>
+                <td class="highlight"><span class="check-yes">✓ SÍ (10 videos = 1 día gratis)</span></td>
+                <td><span class="check-no">✗ NO</span></td>
+                <td><span class="check-no">✗ NO (Prueba limitada)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Llave Maestra en Disco de PC</strong></td>
+                <td class="highlight"><span class="check-yes">✓ NUNCA (Solo en memoria RAM)</span></td>
+                <td><span class="check-no">✗ Almacenada en disco</span></td>
+                <td><span class="check-no">✗ Almacenada en disco</span></td>
+              </tr>
+              <tr>
+                <td><strong>Extensión Chrome / Firefox</strong></td>
+                <td class="highlight"><span class="check-yes">✓ Incluida con Autofill</span></td>
+                <td><span class="check-yes">✓ Incluida</span></td>
+                <td><span class="check-yes">✓ Incluida</span></td>
+              </tr>
+              <tr>
+                <td><strong>Importación CSV (Chrome, Bitwarden, LastPass)</strong></td>
+                <td class="highlight"><span class="check-yes">✓ Sincronización instantánea</span></td>
+                <td><span class="check-yes">✓ Sí</span></td>
+                <td><span class="check-yes">✓ Sí</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="precios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Precios Claros</span>
+        <h2 class="section-title">Elige el plan que se adapte a ti.</h2>
+        <p class="section-desc">Comienza 100% gratis en Android o desbloquea el ecosistema completo con suscripción mensual.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <h3 class="pricing-title">Plan Free</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Ideal para empezar a proteger tus cuentas principales.</p>
+          <div class="pricing-price">$0 <span>/ siempre</span></div>
+          <ul class="pricing-features">
+            <li class="active">✓ Hasta 10 contraseñas locales</li>
+            <li class="active">✓ Cifrado AES-256-GCM completo</li>
+            <li class="active">✓ Desbloqueo con Huella Dactilar</li>
+            <li class="active">✓ Importación de archivos CSV</li>
+            <li class="active">✓ Posibilidad de ganar 1 día Premium viendo videos</li>
+            <li>— Sincronización en la Nube</li>
+            <li>— Cliente de Windows y Extensión</li>
+          </ul>
+          <a href="#descarga-app" class="btn btn-secondary" style="width: 100%;">Descargar App Gratis</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Recomendado</div>
+          <h3 class="pricing-title">SilverArgos Premium</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Soberanía total y sincronización multidispositivo.</p>
+          <div class="pricing-price">$1.99 <span>USD / mes</span></div>
+          <ul class="pricing-features">
+            <li class="active">✓ <strong>Contraseñas Ilimitadas</strong></li>
+            <li class="active">✓ <strong>Sincronización en tu Google Drive</strong></li>
+            <li class="active">✓ <strong>Cliente Windows Desktop (Tauri 2.0)</strong></li>
+            <li class="active">✓ <strong>Extensión de Navegador con Autofill</strong></li>
+            <li class="active">✓ <strong>Experiencia 100% libre de publicidad</strong></li>
+            <li class="active">✓ Soporte prioritario y actualizaciones</li>
+          </ul>
+          <a href="https://github.com/SilverDevsLabs/SilverArgosPass/releases/latest/download/SilverArgosPass_1.0.0_x64-setup.exe" class="btn btn-primary btn-download-exe" style="width: 100%;">Obtener con Windows (.exe)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section" style="background: rgba(14, 19, 29, 0.3);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Preguntas Frecuentes</span>
+        <h2 class="section-title">Todo lo que necesitas saber.</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Por qué es más seguro que LastPass o 1Password?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Las empresas tradicionales almacenan las bóvedas de millones de personas en sus propios servidores centrales (un objetivo gigante para hackers). SilverArgosPass utiliza un modelo <strong>Serverless</strong>: tus datos cifrados se guardan exclusivamente en tu Google Drive personal. Nadie más tiene acceso, y no hay una base de datos central que pueda ser hackeada.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se conecta la aplicación de Windows con mi teléfono?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Al abrir la aplicación de Windows, se genera un código QR de un solo uso con una validez de 5 minutos. Abres la app en Android, escaneas el código con tu cámara autorizando con tu huella, y la llave maestra se transfiere de forma cifrada directamente a la memoria RAM de tu computadora.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué pasa cuando cierro la app de Windows?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            La app cuenta con un modo daemon en la bandeja del sistema para que puedas autorrellenar contraseñas. Cuando cierras la sesión de Windows o sales por completo de la aplicación, la llave maestra se destruye de la memoria RAM automáticamente. Nunca se escribe ningún archivo con tu contraseña maestra en tu disco duro.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo importar mis contraseñas existentes de Chrome o LastPass?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Sí. La aplicación de Android cuenta con un importador nativo de archivos CSV compatible con Google Chrome, Bitwarden, LastPass, Dashlane y Firefox. Al importar, cada contraseña es cifrada inmediatamente con AES-256-GCM.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Call To Action -->
+  <section id="descarga-app" class="download-section">
+    <div class="container">
+      <div class="download-box">
+        <h2>Toma el control de tu seguridad digital hoy.</h2>
+        <p>Descarga el instalador ejecutable de Windows para empezar a usar tu bóveda con la extensión de navegador.</p>
+        <div class="hero-cta-group">
+          <a href="https://github.com/SilverDevsLabs/SilverArgosPass/releases/latest/download/SilverArgosPass_1.0.0_x64-setup.exe" class="btn btn-primary btn-lg btn-download-exe">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar SilverArgosPass para Windows (.exe)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="app-icon.png" alt="SilverArgosPass Icon" class="logo-img">
+            <span>SilverArgosPass</span>
+          </a>
+          <p>El gestor de contraseñas Zero-Knowledge de nueva generación. Desarrollado con orgullo por <strong>Silver Devs Labs</strong>.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Ecosistema</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/SilverDevsLabs/SilverArgosPass/releases/latest/download/SilverArgosPass_1.0.0_x64-setup.exe">Cliente Windows (.exe)</a></li>
+            <li><a href="#descarga-app">App Móvil Android</a></li>
+            <li><a href="https://github.com/SilverDevsLabs/SilverArgosPass">Extensión Chrome / Firefox</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal y Código</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/SilverDevsLabs/SilverArgosPass">Repositorio GitHub</a></li>
+            <li><a href="#seguridad">Arquitectura de Seguridad</a></li>
+            <li><a href="mailto:contact@silverdevslabs.com">Contacto de Soporte</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Silver Devs Labs. Todos los derechos reservados.</div>
+        <div style="color: var(--accent-cyan); font-weight: 600; font-size: 0.85rem;">Inhackeable por diseño.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
