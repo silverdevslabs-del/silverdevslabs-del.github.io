@@ -95,19 +95,20 @@ body {
     text-decoration: none;
 }
 
-.brand-badge {
-    width: 34px;
-    height: 34px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #00E5FF, #9D4EDD);
-    color: #07090E;
-    font-weight: 900;
-    font-family: var(--font-heading);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    box-shadow: 0 0 16px rgba(0, 229, 255, 0.4);
+.brand-logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 229, 255, 0.4);
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.35);
+    transition: var(--transition-smooth);
+}
+
+.brand:hover .brand-logo-img {
+    transform: scale(1.08);
+    box-shadow: 0 0 24px rgba(0, 229, 255, 0.6);
+    border-color: var(--neon-cyan);
 }
 
 .brand-name {
