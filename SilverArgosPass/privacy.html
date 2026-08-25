@@ -134,13 +134,16 @@
         <li><strong>Servicio de Accesibilidad / Autofill:</strong> Utilizado de forma opcional para detectar campos de inicio de sesión en navegadores y aplicaciones y ofrecer el autocompletado seguro de tus credenciales. La aplicación no registra ni almacena lo que escribes en pantalla.</li>
       </ul>
 
-      <h2>5. Eliminación de Datos y Control del Usuario</h2>
-      <p>El usuario tiene control total sobre su información en todo momento:</p>
-      <ul>
-        <li>Puedes eliminar cualquier contraseña individual desde la aplicación, lo que borrará el registro tanto en tu teléfono como en la nube inmediatamente.</li>
-        <li>Puedes cerrar sesión o eliminar tu cuenta en cualquier momento desde los ajustes de la aplicación.</li>
-        <li>Para solicitar la eliminación completa y permanente de todos tus registros asociados en la nube, puedes enviar un correo a <a href="mailto:silver.devs.labs@gmail.com" style="color: var(--accent-cyan);">silver.devs.labs@gmail.com</a>.</li>
-      </ul>
+      <h2 id="eliminacion-datos">5. Solicitud de Eliminación de Cuenta y Datos</h2>
+      <p>El usuario tiene control total sobre su información y el derecho absoluto a eliminar sus datos en cualquier momento:</p>
+      <div class="highlight-box">
+        <p><strong>Mecanismos de Eliminación Inmediata:</strong></p>
+        <ul style="margin-top: 8px; margin-bottom: 0;">
+          <li><strong>Dentro de la Aplicación:</strong> En Ajustes ➡️ "Cerrar Sesión / Restablecer Bóveda", todos los datos locales y la sesión se purgan al instante. Al borrar una contraseña, se elimina de inmediato de Firestore.</li>
+          <li><strong>Solicitud por Correo Electrónico:</strong> Puedes solicitar la eliminación total y permanente de tu cuenta y cualquier registro asociado en Firestore enviando un correo a <a href="mailto:silver.devs.labs@gmail.com?subject=Solicitud%20de%20Eliminación%20de%20Cuenta%20-%20SilverArgosPass" style="color: var(--accent-cyan); font-weight: 600;">silver.devs.labs@gmail.com</a> con el asunto <em>"Solicitud de Eliminación de Cuenta - SilverArgosPass"</em>. Tu solicitud será procesada en un plazo máximo de 48 horas laborales.</li>
+          <li><strong>Datos conservados:</strong> Ninguno. Al procesarse la solicitud, se borran todos los registros del UID de usuario en la base de datos de autenticación y Firestore.</li>
+        </ul>
+      </div>
 
       <h2>6. Seguridad de la Información</h2>
       <p>Implementamos las mejores prácticas de la industria, incluyendo transmisión de datos bajo protocolo seguro HTTPS/TLS y cifrado local de extremo a extremo. Al ser una arquitectura Zero-Knowledge, incluso en el hipotético caso de una vulneración a los servidores de almacenamiento en la nube, los datos obtenidos por terceros serían matemáticamente imposibles de descifrar sin tu PIN maestro.</p>
