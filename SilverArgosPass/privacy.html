@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | SilverArgosPass</title>
+  <meta name="description" content="Política de privacidad de SilverArgosPass por Silver Devs Labs. Arquitectura Zero-Knowledge, protección de datos y términos de seguridad.">
+  <meta name="theme-color" content="#080B10">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    .privacy-content {
+      max-width: 860px;
+      margin: 120px auto 60px;
+      padding: 0 24px;
+      color: var(--text-light, #E2E8F0);
+      line-height: 1.8;
+    }
+    .privacy-card {
+      background: rgba(14, 19, 29, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+    }
+    .privacy-content h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .privacy-content .last-updated {
+      color: var(--accent-cyan, #06B6D4);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .privacy-content h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #F1F5F9;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-bottom: 8px;
+    }
+    .privacy-content p {
+      margin-bottom: 16px;
+      color: #94A3B8;
+    }
+    .privacy-content ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+      color: #94A3B8;
+    }
+    .privacy-content li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: rgba(6, 182, 212, 0.08);
+      border-left: 4px solid var(--accent-cyan, #06B6D4);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      color: #E2E8F0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <img src="app-icon.png" alt="SilverArgosPass Icon" class="logo-img">
+          <span>SilverArgosPass</span>
+        </a>
+        <div class="nav-actions">
+          <a href="index.html" class="btn btn-secondary">
+            <span>← Volver al Inicio</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="privacy-content">
+    <div class="privacy-card">
+      <h1>Política de Privacidad</h1>
+      <div class="last-updated">Última actualización: 25 de agosto de 2026</div>
+
+      <div class="highlight-box">
+        <p><strong>Resumen de Privacidad Cero Conocimiento (Zero-Knowledge):</strong> SilverArgosPass no puede leer, almacenar en texto claro, vender ni compartir tus contraseñas. Toda tu información se cifra localmente en tu dispositivo con AES-256-GCM antes de sincronizarse y tu llave maestra jamás sale de tus dispositivos.</p>
+      </div>
+
+      <h2>1. Información General</h2>
+      <p>Esta Política de Privacidad describe cómo <strong>Silver Devs Labs</strong> recopila, utiliza y protege la información de los usuarios a través de la aplicación móvil y de escritorio <strong>SilverArgosPass</strong> (en adelante, "la Aplicación"). Al utilizar la Aplicación, aceptas las prácticas descritas en esta política.</p>
+
+      <h2>2. Principio de Cero Conocimiento (Zero-Knowledge)</h2>
+      <p>SilverArgosPass opera bajo una estricta arquitectura <strong>Local-First y Zero-Knowledge</strong>:</p>
+      <ul>
+        <li><strong>Cifrado Local:</strong> Todas tus contraseñas, nombres de usuario y notas se cifran en tu propio dispositivo utilizando el estándar criptográfico militar <strong>AES-256-GCM</strong> con derivación de clave <strong>PBKDF2-HMAC-SHA256 (100.000 rondas)</strong>.</li>
+        <li><strong>Sin Acceso a tus Claves:</strong> Tu PIN Maestro, contraseñas y llaves de cifrado nunca se transmiten a nuestros servidores ni a ningún tercero. Ni siquiera Silver Devs Labs ni Google pueden descifrar tus datos.</li>
+        <li><strong>Memoria RAM Efímera en Windows:</strong> En el cliente de escritorio para Windows, la llave maestra se transfiere desde tu celular por código QR cifrado directamente a la memoria RAM. Nunca se escribe en el disco duro y se destruye al cerrar la aplicación.</li>
+      </ul>
+
+      <h2>3. Datos que Recopilamos y su Finalidad</h2>
+      <p>La Aplicación recopila la mínima cantidad de datos estrictamente necesarios para su funcionamiento:</p>
+      <ul>
+        <li><strong>Datos de Autenticación (Opcional):</strong> Si decides activar la sincronización en la nube, utilizamos <em>Firebase Authentication</em> (Google Sign-In) para asociar tus datos cifrados con tu cuenta de usuario (ID de usuario y correo electrónico).</li>
+        <li><strong>Bóveda Cifrada (Opcional en la Nube):</strong> Si utilizas la sincronización, se almacena en <em>Google Cloud Firestore</em> únicamente el texto cifrado (bloques matemáticos ilegibles) de tus contraseñas.</li>
+        <li><strong>Compras y Suscripciones:</strong> Las suscripciones Premium se procesan de forma segura a través de <em>Google Play Billing</em>. Nosotros no recopilamos ni almacenamos información de tarjetas de crédito o datos bancarios.</li>
+        <li><strong>Publicidad (Versión Gratuita):</strong> La versión gratuita de la aplicación utiliza <em>Google AdMob</em> para mostrar banners, anuncios de apertura y videos con recompensa. Google AdMob puede recopilar identificadores de publicidad anónimos del dispositivo para servir anuncios según las políticas de privacidad de Google. Los usuarios suscritos a Premium disfrutan de una experiencia 100% libre de publicidad.</li>
+      </ul>
+
+      <h2>4. Permisos del Dispositivo en Android</h2>
+      <p>Para proporcionar sus funcionalidades de seguridad, la aplicación solicita los siguientes permisos:</p>
+      <ul>
+        <li><strong>Biometría (Huella dactilar / Desbloqueo facial):</strong> Utilizado localmente para autenticar tu identidad antes de descifrar la bóveda en memoria RAM.</li>
+        <li><strong>Cámara:</strong> Utilizado exclusivamente para escanear el código QR efímero y transferir de forma segura la llave maestra a tu cliente de Windows. No se guardan fotos ni videos.</li>
+        <li><strong>Servicio de Accesibilidad / Autofill:</strong> Utilizado de forma opcional para detectar campos de inicio de sesión en navegadores y aplicaciones y ofrecer el autocompletado seguro de tus credenciales. La aplicación no registra ni almacena lo que escribes en pantalla.</li>
+      </ul>
+
+      <h2>5. Eliminación de Datos y Control del Usuario</h2>
+      <p>El usuario tiene control total sobre su información en todo momento:</p>
+      <ul>
+        <li>Puedes eliminar cualquier contraseña individual desde la aplicación, lo que borrará el registro tanto en tu teléfono como en la nube inmediatamente.</li>
+        <li>Puedes cerrar sesión o eliminar tu cuenta en cualquier momento desde los ajustes de la aplicación.</li>
+        <li>Para solicitar la eliminación completa y permanente de todos tus registros asociados en la nube, puedes enviar un correo a <a href="mailto:silver.devs.labs@gmail.com" style="color: var(--accent-cyan);">silver.devs.labs@gmail.com</a>.</li>
+      </ul>
+
+      <h2>6. Seguridad de la Información</h2>
+      <p>Implementamos las mejores prácticas de la industria, incluyendo transmisión de datos bajo protocolo seguro HTTPS/TLS y cifrado local de extremo a extremo. Al ser una arquitectura Zero-Knowledge, incluso en el hipotético caso de una vulneración a los servidores de almacenamiento en la nube, los datos obtenidos por terceros serían matemáticamente imposibles de descifrar sin tu PIN maestro.</p>
+
+      <h2>7. Menores de Edad</h2>
+      <p>SilverArgosPass no está dirigida deliberadamente a menores de 13 años. No recopilamos conscientemente información personal de niños.</p>
+
+      <h2>8. Cambios a esta Política</h2>
+      <p>Nos reservamos el derecho de actualizar esta Política de Privacidad cuando introduzcamos nuevas funciones. Cualquier cambio se publicará en esta misma página web con la fecha de actualización correspondiente.</p>
+
+      <h2>9. Contacto</h2>
+      <p>Si tienes preguntas, dudas o inquietudes sobre esta Política de Privacidad o la seguridad de tus datos, puedes contactarnos en:</p>
+      <ul>
+        <li><strong>Desarrollador:</strong> Silver Devs Labs</li>
+        <li><strong>Correo electrónico de soporte:</strong> <a href="mailto:silver.devs.labs@gmail.com" style="color: var(--accent-cyan);">silver.devs.labs@gmail.com</a></li>
+        <li><strong>Sitio web oficial:</strong> <a href="https://silverdevslabs-del.github.io/SilverArgosPass/" style="color: var(--accent-cyan);">https://silverdevslabs-del.github.io/SilverArgosPass/</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Silver Devs Labs. Todos los derechos reservados.</div>
+        <div style="color: var(--accent-cyan); font-weight: 600; font-size: 0.85rem;">Inhackeable por diseño.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
