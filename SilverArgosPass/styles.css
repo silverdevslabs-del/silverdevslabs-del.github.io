@@ -266,6 +266,21 @@ h1, h2, h3, h4 {
   gap: 6px;
 }
 
+.smartscreen-notice {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.smartscreen-notice svg {
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
 /* Hero Showcase Card */
 .hero-showcase {
   margin-top: 60px;
