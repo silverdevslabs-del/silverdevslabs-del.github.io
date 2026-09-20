@@ -171,6 +171,21 @@ h1, h2, h3, h4 {
   filter: brightness(1.08);
 }
 
+.btn-playstore {
+  background: linear-gradient(135deg, #00E5FF 0%, #00FF88 100%);
+  color: #030811 !important;
+  font-weight: 700;
+  box-shadow: 0 4px 24px rgba(0, 229, 255, 0.4), 0 0 12px rgba(0, 255, 136, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-playstore:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 229, 255, 0.55), 0 0 20px rgba(0, 255, 136, 0.5);
+  filter: brightness(1.05);
+}
+
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-main);
