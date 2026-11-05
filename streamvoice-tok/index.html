@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVoice: Tok Live Chat TTS — Lee tu chat en vivo sin distracciones</title>
+    <meta name="description" content="Lector de chat en vivo con síntesis de voz inteligente (TTS) para TikTok. Escucha comentarios, regalos y seguidores con ultra baja latencia y motor SmartQueue™.">
+    
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="StreamVoice: Tok Live Chat TTS — Audio Inteligente para Streamers">
+    <meta property="og:description" content="Escucha tu chat de TikTok en vivo mediante voces neuronales sin desviar la mirada de tu pantalla ni saturar el stream.">
+    <meta property="og:image" content="assets/screenshot1.jpg">
+    <meta name="theme-color" content="#00F0FF">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+</head>
+<body>
+
+    <!-- Ambient Glowing Orbs -->
+    <div class="bg-ambient">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="brand">
+                <img src="assets/logo.webp" alt="StreamVoice: Tok Icon" class="brand-icon">
+                <div class="brand-text">
+                    <span class="brand-title">StreamVoice: <span class="text-cyan">Tok</span></span>
+                    <span class="brand-subtitle">Live Chat TTS</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#simulator" class="nav-link">Demo en Vivo</a>
+                <a href="#features" class="nav-link">Características</a>
+                <a href="#smartqueue" class="nav-link">SmartQueue™</a>
+                <a href="#guide" class="nav-link">Cómo Empezar</a>
+                <a href="#testing" class="nav-link">Beta Google Play</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="downloads/StreamVoiceTok-v1.0.0-b1.apk" class="btn btn-primary btn-sm" download>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar APK
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menú">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge-wrap">
+                    <div class="badge badge-glow">
+                        <span class="pulse-dot"></span>
+                        v1.0.0 Estable • Suite StreamVoice
+                    </div>
+                </div>
+
+                <h1 class="hero-title">
+                    Tu chat de TikTok en voz alta. <br>
+                    <span class="gradient-text">Cero distracciones.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Escucha comentarios, regalos y nuevos seguidores en tiempo real mediante síntesis de voz inteligente. Diseñado especialmente para streamers de videojuegos, IRL y creadores que necesitan responder sin apartar la mirada de la acción.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="downloads/StreamVoiceTok-v1.0.0-b1.apk" class="btn btn-primary" download>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Descargar APK v1.0.0 Directo
+                    </a>
+                    <a href="#testing" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        Unirse a la Beta Google Play
+                    </a>
+                </div>
+
+                <div class="hero-meta-badges">
+                    <div class="meta-pill">🛡️ <span>100% Sin Servidores Intrusivos</span></div>
+                    <div class="meta-pill">•</div>
+                    <div class="meta-pill">⚡ <span>SmartQueue™ Anti-Lag</span></div>
+                    <div class="meta-pill">•</div>
+                    <div class="meta-pill">🔋 <span>Canal STREAM_ACCESSIBILITY</span></div>
+                </div>
+            </div>
+
+            <!-- Phone Mockup with Dual Screenshot Tabs -->
+            <div class="mockup-wrap">
+                <div class="mockup-glow"></div>
+                
+                <!-- Floating Badges -->
+                <div class="floating-badge badge-top-left">
+                    <div class="icon-box">💬</div>
+                    <div class="badge-text">
+                        <span class="badge-title">Ultra Baja Latencia</span>
+                        <span class="badge-sub">Recepción instantánea</span>
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-bottom-right">
+                    <div class="icon-box">🎁</div>
+                    <div class="badge-text">
+                        <span class="badge-title">Prioridad VIP</span>
+                        <span class="badge-sub">Regalos siempre primero</span>
+                    </div>
+                </div>
+
+                <div class="mockup-frame">
+                    <div class="mockup-notch"></div>
+                    <img src="assets/screenshot1.jpg" alt="StreamVoice: Tok Interfaz Principal" class="mockup-screen" id="screen-1">
+                    <img src="assets/screenshot2.jpg" alt="StreamVoice: Tok Configuración Avanzada" class="mockup-screen hidden" id="screen-2">
+                </div>
+
+                <div class="mockup-tabs">
+                    <div class="mockup-dot active" data-target="screen-1" title="Pantalla Principal"></div>
+                    <div class="mockup-dot" data-target="screen-2" title="Ajustes y Voces"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Event Simulator (SmartQueue Preview) -->
+    <section class="section" id="simulator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Demostración Interactiva</span>
+                <h2 class="section-title">Experimenta la Cola Inteligente</h2>
+                <p class="section-desc">Haz clic en los eventos de prueba para simular cómo StreamVoice procesa el chat en directo sin saturarte.</p>
+            </div>
+
+            <div class="simulator-box">
+                <div class="sim-controls">
+                    <h3>Prueba un evento en vivo</h3>
+                    <p>En directo, miles de mensajes compiten por sonar. Mira cómo responde StreamVoice de forma balanceada:</p>
+                    
+                    <div class="sim-triggers">
+                        <button class="sim-btn active" data-type="comment">
+                            <span class="sim-icon">💬</span>
+                            <div class="sim-info">
+                                <span class="sim-name">Comentario Estándar</span>
+                                <span class="sim-desc">Lectura natural con filtro anti-insultos</span>
+                            </div>
+                        </button>
+
+                        <button class="sim-btn" data-type="gift">
+                            <span class="sim-icon">🦁</span>
+                            <div class="sim-info">
+                                <span class="sim-name">Regalo Especial (León VIP)</span>
+                                <span class="sim-desc">Interrumpe o adelanta en la cola con aviso épico</span>
+                            </div>
+                        </button>
+
+                        <button class="sim-btn" data-type="likes">
+                            <span class="sim-icon">❤️</span>
+                            <div class="sim-info">
+                                <span class="sim-name">Ráfaga Masiva de Likes</span>
+                                <span class="sim-desc">Agrupa 500 likes en un solo aviso sutil</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sim-display">
+                    <div class="display-header">
+                        <div class="live-indicator">
+                            <span class="pulse-dot"></span> LIVE CONECTADO
+                        </div>
+                        <span>TIKTOK_SOCKET_READY</span>
+                    </div>
+
+                    <div class="sim-feed" id="sim-feed">
+                        <div class="feed-item comment">
+                            <div>
+                                <span class="feed-user">@StreamerFan:</span>
+                                <span>¡Excelente transmisión! ¿Qué juego juegas hoy?</span>
+                            </div>
+                            <span class="feed-voice-badge">TTS Activo</span>
+                        </div>
+                    </div>
+
+                    <div class="audio-wave-wrap">
+                        <div class="wave-bars">
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                        </div>
+                        <span class="audio-status-text" id="audio-status">Listo. Haz clic en un botón para escuchar.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Diseñado para Streamers</span>
+                <h2 class="section-title">Tecnología de Audio Sin Fricción</h2>
+                <p class="section-desc">Cada función fue pensada para que te concentres 100% en tu contenido y en tu juego.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">🧠</div>
+                    <h3 class="feature-title">SmartQueue™ Anti-Lag</h3>
+                    <p class="feature-desc">
+                        Otras apps acumulan hasta 5 minutos de retraso cuando entran muchos mensajes. StreamVoice purga el spam y prioriza regalos y donaciones al instante.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">⚡</div>
+                    <h3 class="feature-title">Motor Híbrido Multi-Proveedor</h3>
+                    <p class="feature-desc">
+                        Conexión directa por WebSockets nativos más soporte para proveedores como Euler Stream y TikTool con conmutación por error automática.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">🎧</div>
+                    <h3 class="feature-title">Canal STREAM_ACCESSIBILITY</h3>
+                    <p class="feature-desc">
+                        Permite escuchar la voz por el canal de accesibilidad o multimedia. Tu música o el audio del juego nunca silenciarán la lectura del chat.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">🔒</div>
+                    <h3 class="feature-title">Zero-Knowledge & Sin Iniciar Sesión</h3>
+                    <p class="feature-desc">
+                        Solo escribes tu nombre de usuario público <code>@streamer</code>. Jamás te pedimos contraseñas, tokens de cuenta ni accesos intrusivos.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">🗣️</div>
+                    <h3 class="feature-title">30+ Voces Neuronales</h3>
+                    <p class="feature-desc">
+                        Compatible con motores de voz del sistema (Google TTS, Samsung) y síntesis local rápida. Personaliza el tono, volumen y velocidad a tu gusto.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">🛡️</div>
+                    <h3 class="feature-title">Filtro de Moderación</h3>
+                    <p class="feature-desc">
+                        Lista negra de palabras personalizable, omisión de emojis repetidos y bloqueo de comandos spam para mantener tu directo limpio y seguro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SmartQueue Spotlight -->
+    <section class="section" id="smartqueue">
+        <div class="container">
+            <div class="smartqueue-banner">
+                <div class="sq-content">
+                    <span class="badge badge-purple" style="margin-bottom: 16px;">Arquitectura de Sonido Exclusiva</span>
+                    <h3>¿Por qué SmartQueue™ hace la diferencia?</h3>
+                    <p>
+                        Cuando una sala supera los 100 espectadores, los motores de voz convencionales colapsan encolando cientos de frases viejas. 
+                    </p>
+                    <ul class="sq-list">
+                        <li><span class="bullet">✓</span> <strong>Eliminación de mensajes obsoletos:</strong> Si un mensaje lleva más de 12 segundos esperando, se descarta para no desincronizar tu directo.</li>
+                        <li><span class="bullet">✓</span> <strong>Carril VIP para donaciones:</strong> Si alguien te envía una Galaxia o un León, pasa de inmediato al primer lugar de la cola.</li>
+                        <li><span class="bullet">✓</span> <strong>Modo Ahorro de Batería:</strong> Sin consumo excesivo mientras juegas a 60 FPS o 120 FPS en el móvil.</li>
+                    </ul>
+                </div>
+
+                <div class="sq-visual">
+                    <div class="sq-step-card sq-step-1">
+                        <div class="sq-step-badge">1</div>
+                        <div class="sq-step-text">
+                            <div class="sq-step-title">Ingreso Masivo de Eventos</div>
+                            <div class="sq-step-sub">Comentarios, likes, regalos y uniones entran por WebSockets</div>
+                        </div>
+                    </div>
+
+                    <div class="sq-step-card sq-step-2">
+                        <div class="sq-step-badge">2</div>
+                        <div class="sq-step-text">
+                            <div class="sq-step-title">Filtro & Ponderación Inteligente</div>
+                            <div class="sq-step-sub">SmartQueue clasifica por prioridad y antigüedad</div>
+                        </div>
+                    </div>
+
+                    <div class="sq-step-card sq-step-3">
+                        <div class="sq-step-badge">3</div>
+                        <div class="sq-step-text">
+                            <div class="sq-step-title">Síntesis de Voz Fluida</div>
+                            <div class="sq-step-sub">Audio cristalino directo a tus audífonos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Guide -->
+    <section class="section" id="guide">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Listo en 60 segundos</span>
+                <h2 class="section-title">Comienza a Usarlo en 3 Pasos</h2>
+                <p class="section-desc">Sin registros engorrosos ni configuraciones complejas en la PC.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Escribe tu @usuario</h3>
+                    <p class="step-desc">
+                        Abre la app en tu teléfono Android e ingresa tu nombre de usuario público de TikTok donde estarás transmitiendo.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Personaliza tus Eventos</h3>
+                    <p class="step-desc">
+                        Elige qué quieres escuchar: comentarios, nombres de donadores de regalos, nuevos seguidores o saludos automáticos.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">¡Inicia y Escucha!</h3>
+                    <p class="step-desc">
+                        Toca "Conectar", ponte tus auriculares y abre tu juego favorito o atiende tu directo. La app funcionará en segundo plano.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Program & Google Play Section -->
+    <section class="section" id="testing">
+        <div class="container">
+            <div class="testing-card">
+                <span class="badge badge-glow" style="margin-bottom: 16px;">Acceso Anticipado Oficial</span>
+                <h3>Únete al Programa de Testers Oficial</h3>
+                <p>
+                    StreamVoice: Tok se encuentra actualmente en fase de revisión y prueba cerrada en Google Play Console. Puedes instalar el APK verificado de inmediato o unirte a nuestro grupo de testing para recibir actualizaciones oficiales de Play Store.
+                </p>
+
+                <div class="testing-boxes">
+                    <div class="testing-option">
+                        <div>
+                            <h4>⚡ Descarga Directa (APK)</h4>
+                            <p>Instala de inmediato en tu dispositivo Android. Firma oficial de Silver Devs Labs, compatible con Play Protect.</p>
+                        </div>
+                        <a href="downloads/StreamVoiceTok-v1.0.0-b1.apk" class="btn btn-primary" download>
+                            Descargar APK v1.0.0 (17.9 MB)
+                        </a>
+                    </div>
+
+                    <div class="testing-option">
+                        <div>
+                            <h4>👥 Grupo de Testers en Google Play</h4>
+                            <p>Forma parte de la comunidad de testers para probar versiones beta directamente desde la Play Store antes que nadie.</p>
+                        </div>
+                        <a href="https://groups.google.com/g/testers-community" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            Unirme a Testers Community
+                        </a>
+                    </div>
+                </div>
+
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                    ¿Tienes dudas o necesitas soporte directo? Escríbenos a <a href="mailto:silver.devs.labs@gmail.com" style="color:var(--neon-cyan)">silver.devs.labs@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Disclaimer (Safe Harbor) -->
+    <div class="container disclaimer-wrap">
+        <div class="disclaimer-box">
+            <strong>Descargo de Responsabilidad y Marcas:</strong> StreamVoice: Tok Live Chat TTS es un software independiente desarrollado por <strong>Silver Devs Labs</strong> para propósitos de accesibilidad y productividad en transmisiones en vivo. Esta aplicación y sitio web no guardan ninguna afiliación, patrocinio, asociación ni respaldo oficial por parte de TikTok Inc., ByteDance Ltd. ni sus empresas subsidiarias. "TikTok" es una marca registrada de sus respectivos titulares de derechos.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/silver_devs_logo.png" alt="Silver Devs Labs" class="footer-logo">
+                    <span style="font-weight: 700; font-size: 1rem;">Silver Devs Labs</span>
+                </div>
+
+                <div class="footer-links">
+                    <a href="../index.html" class="footer-link">Portal Principal</a>
+                    <a href="../privacy-streamvoicetok.html" class="footer-link">Política de Privacidad</a>
+                    <a href="mailto:silver.devs.labs@gmail.com" class="footer-link">Contacto de Soporte</a>
+                    <a href="https://github.com/silverdevslabs-del" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Silver Devs Labs. Todos los derechos reservados.</span>
+                <span>StreamVoice Suite • Privacidad y Alto Rendimiento</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
